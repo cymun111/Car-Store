@@ -10,13 +10,14 @@ function myFunction() {
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
     th = tr[i].getElementsByTagName("th")[0];
+    var noResults = document.getElementById("noResults");
     if (th) {
       if (th.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
-        $("#noResults").hide();
+        noResults.hide();
       } else {
         tr[i].style.display = "none";
-        $("$noResults").show();
+        noResults.show();
       }
     } 
   }

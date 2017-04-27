@@ -23,9 +23,9 @@ document.getElementById('corv').appendChild(clone);
 function myFunction() {
   // Declare variables 
   var input, filter, table, tr, td, i;
-  input = document.getElementById("searchBar");
+  input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("table");
+  table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
   // Loop through all table rows, and hide those who don't match the search query

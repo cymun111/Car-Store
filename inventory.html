@@ -107,7 +107,7 @@
 
 <!--Thumbnails-->
 
-<table id="table" class="table table-hover table-bordered results">
+<table width="800px" height="600" id="table" class="table table-hover table-bordered results">
   <thead>
     <tr>
       <th>#</th>
@@ -121,80 +121,60 @@
   </thead>
   <tbody>
     <tr>
-    <template id="bmwtemplate">
-      <th scope="row"></th>
-      <td><img class="img-responsive" src="images/2017 BMW i8 Spyder$143,400.jpg">BMW Spider</td>
-      <td>MSRP: $143,000</td>
-      <td class="tax">MSRP + Tax:</td>
-    </template>
+    <th scope="row"></th>
+    <td class="car"><div id="bmw" width="inherit" height="inherit"></div></td>
+    <td class="price">143,400</td>
+    <td class="pplustax"></td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>
-        <div class="thumbnail">
-            <div class="caption">
-                <h4>Lamborghini Aventador</h4>
-                <p>MSRP $339,500</p>
-                <p><a href="" class="label label-default" rel="tooltip" title="Learn More">Learn More</a>
-                <a href="" class="label label-danger" rel="tooltip" title="Add to Cart">Add to Cart</a></p>
-            </div>
-            <img class="img-responsive" src="images/Lamborghini Aventador$399,500 .jpg">
-        </div>
-      </td>
+      <td class="car"><div id="lambo" width="inherit" height="inherit"></div></td>
       <td>MSRP: $339,500</td>
       <td class="tax">MSRP + Tax:</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>
-        <div class="thumbnail">
-            <div class="caption">
-                <h4 id="ferrari">Ferrari F12</h4>
-                <p>MSRP $319,995</p>
-                <p><a href="" class="label label-default" rel="tooltip" title="Learn More">Learn More</a>
-                <a href="" class="label label-danger" rel="tooltip" title="Add to Cart">Add to Cart</a></p>
-            </div>
-            <img class="img-responsive" src="images/2017 Ferrari f12$319,995.jpg">
-         </div>
-      </td>
+      <td class="car"><div id="ferr" width="inherit" height="inherit"></div></td>
       <td>MSRP: $319,995</td>
       <td class="tax">MSRP + Tax:</td>
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td>
-        <div class="thumbnail">
-            <div class="caption">
-                <h4 id="porsche">Porsche 718 Boxster</h4>
-                <p>MSRP $56,000</p>
-                <p><a href="" class="label label-default" rel="tooltip" title="Learn More">Learn More</a>
-                <a href="" class="label label-danger" rel="tooltip" title="Add to Cart">Add to Cart</a></p>
-            </div>
-            <img class="img-responsive" src="images/2017-Porsche-718-Boxster-$56,000.jpg">
-         </div>
-      </td>
+      <td class="car"><div id="por" width="inherit" height="inherit"></div></td>
       <td>MSRP:$56,000</td>
       <td class="tax">MSRP + Tax:</td>
     </tr>
 
     <tr>
       <th scope="row">5</th>
-      <td>
-        <div class="thumbnail">
-            <div class="caption">
-                <h4 id="corvette">Chevrolet Corvette Grand Sport</h4>
-                <p>MSRP $55,450</p>
-                <p><a href="" class="label label-default" rel="tooltip" title="Learn More">Learn More</a>
-                <a href="" class="label label-danger" rel="tooltip" title="Add to Cart">Add to Cart</a></p>
-            </div>
-            <img class="img-responsive" src="images/2017-Chevrolet-Corvette-Grand-Sport $55,450.jpg">
-         </div>
-      </td>
+      <td class="car"><div id="corv" width="inherit" height="inherit"></div></td>
       <td>MSRP:$55,450</td>
       <td class="tax">MSRP + Tax:</td>
     </tr>
   </tbody>
 </table>
+
+<!-- Templates -->
+
+
+<template id="bmwtemplate">
+    <img id="bmwimage" name="productimage" width="100%" height="100%" class="productarticlelargeimage" src="images/2017 BMW i8 Spyder$143,400.jpg" alt="product image">
+</template>
+<template id="lambotemplate">
+    <img id="lamboimage" name="productimage" width="100%" height="100%" class="productarticlelargeimage" src="images/Lamborghini Aventador$399,500 .jpg" alt="product image">
+</template>
+<template id="ferrtemplate">
+    <img id="ferrimage" name="productimage" width="100%" height="100%" class="productarticlelargeimage" src="images/2017 Ferrari f12$319,995.jpg" alt="product image">
+</template>
+<template id="portemplate">
+    <img id="porimage" name="productimage" width="100%" height="100%" class="productarticlelargeimage" src="images/2017-Porsche-718-Boxster-$56,000.jpg" alt="product image">
+</template>
+<template id="corvtemplate">
+    <img id="corvimage" name="productimage" width="100%" height="100%" class="productarticlelargeimage" src="images/2017-Chevrolet-Corvette-Grand-Sport $55,450.jpg" alt="product image">
+</template>
+
+
+
 
 <footer>
    <p>Our address is <address>555 Drive Way, Speeding, Arizona</address></p>

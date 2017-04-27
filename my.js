@@ -14,10 +14,10 @@ function myFunction() {
     if (th) {
       if (th.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
-        noResults.hide();
+        noResults.style.display = "none";
       } else {
         tr[i].style.display = "none";
-        noResults.show();
+        noResults.style.display = "";
       }
     } 
   }

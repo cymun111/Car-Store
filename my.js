@@ -13,8 +13,10 @@ function myFunction() {
     if (th) {
       if (th.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
+        $("#noResults").hide();
       } else {
         tr[i].style.display = "none";
+        $("$noResults").show();
       }
     } 
   }

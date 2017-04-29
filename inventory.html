@@ -106,62 +106,65 @@
 
 
 <!--Thumbnails-->
-
-<table width="auto" height="auto" id="myTable" class="table table-hover table-bordered results">
+<div class="container-fluid">
+<table width="100%" height="100%" id="myTable" class="table fixed  table-bordered results">
   <thead>
-    <tr>
-      <th>#</th>
-      <th class="col-md-5 col-xs-5">Car</th>
-      <th class="col-md-4 col-xs-4">MSRP</th>
-      <th class="col-md-3 col-xs-4">MSRP + Tax</th>
+    <tr class="row">
+      <div class="col">
+      <th class="col">Car Make</th>
+      <th class="col-sm-5">Car</th>
+      <th class="col-sm-2">MSRP</th>
+      <th class="col-xs-3">MSRP + Tax</th>
+      </div>
     </tr>
-    <tr id="noResults">
+    <tr class="row" id="noResults">
       <td colspan="4"><i class="fa fa-warning"></i> No result</td>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <div class="mydiv">
-      <td class="logos" id="bmwLogo"></td>
-      <td class="car"><div id="bmw"></div></td>
-      <td class="price">MSRP: $143,400</td>
-      <td id="tax0" class="taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton0" value="text" type="button">Calculate</button></td>
+    <tr class="row">
+      <div class="col">
+      <td class="col logos" id="bmwLogo"></td>
+      <td class="col-sm-5 car"><div id="bmw"></div></td>
+      <td class="col-sm-2 price">MSRP: $143,400</td>
+      <td id="tax0" class="col-xs-3 taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton0" value="text" type="button">Calculate</button></td>
       </div>
     </tr>
-    <tr>
-      <div class="mydiv">
-      <td class="logos" id="lamboLogo"></td>
-      <td class="car"><div id="lambo"></div></td>
-      <td class="price">MSRP: $339,500</td>
-      <td id="tax1" class="taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton1" value="text" type="button">Calculate</button></td>
+    <tr class="row">
+      <div class="col">
+      <td class="col logos" id="lamboLogo"></td>
+      <td class="col-sm-5 car"><div id="lambo"></div></td>
+      <td class="col-sm-2 price">MSRP: $339,500</td>
+      <td id="tax1" class="col-xs-3 taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton1" value="text" type="button">Calculate</button></td>
       </div>
     </tr>
-    <tr>
-      <div class="mydiv">
-      <td class="logos" id="ferrLogo"></td>
-      <td class="car"><div id="ferr"></div></td>
-      <td class="price">MSRP: $319,995</td>
-      <td id="tax2" class="taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton2" value="text" type="button">Calculate</button></td>
+    <tr class="row">
+      <div class="col">
+      <td class="col logos" id="ferrLogo"></td>
+      <td class="col-sm-5 car"><div id="ferr"></div></td>
+      <td class="col-sm-2 price">MSRP: $319,995</td>
+      <td id="tax2" class="col-xs-3 taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton2" value="text" type="button">Calculate</button></td>
       </div>
     </tr>
-     <tr>
-      <div class="mydiv">
-      <td class="logos" id="porLogo"></td>
-      <td class="car"><div id="por"></div></td>
-      <td class="price">MSRP:$56,000</td>
-      <td id="tax3" class="taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton3" value="text" type="button">Calculate</button></td>
+     <tr class="row">
+      <div class="col">
+      <td class="col logos" id="porLogo"></td>
+      <td class="col-sm-5 car"><div id="por"></div></td>
+      <td class="col-sm-2 price">MSRP:$56,000</td>
+      <td id="tax3" class="col-xs-3 taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton3" value="text" type="button">Calculate</button></td>
       </div>
      </tr>
-    <tr>
-      <div class="mydiv">
-      <td class="logos" id="corvLogo"></td>
-      <td class="car"><div id="corv"></div></td>
-      <td class="price">MSRP:$55,450</td>
-      <td id="tax4" class="taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton4" value="text" type="button">Calculate</button></td>
+    <tr class="row">
+      <div class="col">
+      <td class="col logos" id="corvLogo"></td>
+      <td class="col-sm-5 car"><div id="corv"></div></td>
+      <td class="col-sm-2 price">MSRP:$55,450</td>
+      <td id="tax4" class="col-xs-3 taxfont"><p>Calculate MSRP+Tax</p><button id="taxButton4" value="text" type="button">Calculate</button></td>
       </div>
     </tr>
   </tbody>
 </table>
+</div>
 
 <!-- Templates -->
 
